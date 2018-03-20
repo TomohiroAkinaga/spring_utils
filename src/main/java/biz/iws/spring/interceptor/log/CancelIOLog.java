@@ -1,4 +1,4 @@
-package biz.iws.interceptor.log;
+package biz.iws.spring.interceptor.log;
 
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.ElementType.TYPE;

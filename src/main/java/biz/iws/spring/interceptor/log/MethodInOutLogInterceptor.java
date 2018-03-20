@@ -1,4 +1,4 @@
-package biz.iws.interceptor.log;
+package biz.iws.spring.interceptor.log;
 
 import java.util.Calendar;
 import java.util.HashMap;

@@ -1,20 +1,20 @@
-package biz.iws.contextloader;
+package biz.iws.spring.contextloader;
 
 import java.util.TimeZone;
 
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.WebApplicationContext;
 
-public class JstLocalizeContextLoaderListener extends ContextLoaderListener {
+public class GmtLocalizeContextLoaderListener extends ContextLoaderListener {
 
-	private static final String TIME_ZONE = "Asia/Tokyo";
+	private static final String TIME_ZONE = "GMT";
 
-	public JstLocalizeContextLoaderListener() {
+	public GmtLocalizeContextLoaderListener() {
 		super();
 		TimeZone.setDefault(TimeZone.getTimeZone(TIME_ZONE));
 	}
 
-	public JstLocalizeContextLoaderListener(WebApplicationContext context) {
+	public GmtLocalizeContextLoaderListener(WebApplicationContext context) {
 		super(context);
 		TimeZone.setDefault(TimeZone.getTimeZone(TIME_ZONE));
 	}
